@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Games</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="center">
+            <a href="index.html">Главная</a>
+            <a href="riddles.html">Загадки</a>
+            <a href="guess.html">Угадайка</a>
+            <a href="password.html">Генератор паролей</a>
+        </header>
+
+        <main class="center">
+            <div class="game game__riddles">
+
+                <h1>Игра в загадки</h1>
+
+                <div class="game__body game__body-riddles-main">
+                    <div class="game__body-riddles">
+                        <div class="modal__black-screen hidden">
+                            <div class="game__body-riddles-modal"><i class="fas fa-window-close"></i>
+                                <p class="game__body-riddles-modal-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button onClick="checkAnswers();" id="buttonStart">Ответить</button>
+                    <button onClick="restart();" id="buttonAgain" class="hidden">Сыграть еще раз</button>
+                </div>
+
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright &copy; 2021 Roy Alexander</p>
+            <a href="https://vk.com/fennixx" target="_blank"><i class="fab fa-vk"></i></a>
+        </footer>
+
+    </div>
+    <script src="js/riddles.js"></script>
+</body>
+
+</html>

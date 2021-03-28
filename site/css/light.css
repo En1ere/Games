@@ -1,0 +1,43 @@
+header {
+    background-color: #dfdfdf;
+    border-bottom: 1px solid #b5b7ba;
+    color: #4d4d4d;
+}
+a {
+    color: #4d4d4d;
+}
+body {
+    background-color: #f7f7f7;
+    color: #242424;
+}
+main {
+    background-color: #f7f7f7;
+}
+button:hover{
+    box-shadow: 0 0 10px 3px rgba(0, 145, 189, 0.651);
+}
+.game__body-riddle {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.233);
+}
+.fa-vk{
+    color: #a4a4a4;
+}
+.fa-vk:hover {
+    color: rgb(0, 145, 189);
+    transition: all 0.3s;
+}
+input {
+    border: 1px solid #a0a0a0;
+    background-color: #f5f5f5;
+}
+footer {
+    background-color: #434445;
+    color: #a4a4a4;
+}
+.modal__black-screen {
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.game__body-riddles-modal {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.363);
+    background-color: #f7f7f7
+}

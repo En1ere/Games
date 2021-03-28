@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Games</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="center">
+            <a href="index.html">Главная</a>
+            <a href="riddles.html">Загадки</a>
+            <a href="guess.html">Угадайка</a>
+            <a href="password.html">Генератор паролей</a>
+        </header>
+
+        <main class="center">
+            <div class="game game__guess">
+                <h1>"Угадайка"</h1>
+
+                <div class="game__body game__body-guess">
+
+                    <p id="info">Угадайте число от 0 до 100 за семь попыток <br>Введите ответ ниже:</p>
+                    <input type="text" id="userAnswer">
+                    <button onClick="guess();" id="button">Начать</button>
+                    <button onClick="restart();" id="buttonAgain" class="hidden">Еще разок</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright &copy; 2021 Roy Alexander</p>
+            <a href="https://vk.com/fennixx" target="_blank"><i class="fab fa-vk"></i></a>
+        </footer>
+
+    </div>
+    <script src="js/guess.js"></script>
+</body>
+
+</html>

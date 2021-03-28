@@ -1,0 +1,203 @@
+body {
+  font-family: 'Neucha', cursive;
+  font-size: 36px;
+  color: white;
+}
+
+button {
+  margin-top: 30px;
+  font-size: 35px;
+  padding: 10px;
+  background-color: #0091bd;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-box-shadow: 0px 0px 5px 5px white;
+          box-shadow: 0px 0px 5px 5px white;
+}
+
+button:active {
+  color: #005974;
+}
+
+input {
+  margin: 30px 0;
+  font-size: 35px;
+  padding: 10px 10px;
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.center {
+  padding: 0 calc(50% - 570px);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  background-color: #333336;
+  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #0091bd;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+  background-color: #222226;
+  text-align: center;
+}
+
+.modal__black-screen {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 5;
+}
+
+.fa-check {
+  color: #00c200;
+}
+
+.fa-times {
+  color: red;
+}
+
+.fa-window-close {
+  margin-bottom: 20px;
+}
+
+.fa-window-close:hover {
+  color: #0091bd;
+  cursor: pointer;
+}
+
+.game {
+  padding: 50px 30px;
+}
+
+.game h1 {
+  font-size: 50px;
+}
+
+.game__body {
+  margin-top: 100px;
+  text-align: left;
+}
+
+.game__body-riddle {
+  min-height: 130px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc((100% / 2) - 6rem);
+          flex: 1 1 calc((100% / 2) - 6rem);
+  -webkit-box-shadow: 0 0 10px 5px black;
+          box-shadow: 0 0 10px 5px black;
+  padding: 20px;
+}
+
+.game__body-riddle-text {
+  min-height: 100px;
+}
+
+.game__body-riddles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game__body-riddles input:last-of-type {
+  margin-bottom: 40px;
+}
+
+.game__body-riddles-icons {
+  position: absolute;
+  margin: 40px 0 0 20px;
+  z-index: 1;
+}
+
+.game__body-riddles-modal {
+  z-index: 5;
+  min-width: 200px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 400px;
+  background-color: #222226;
+  padding: 10px 20px 30px 20px;
+  -webkit-box-shadow: 0 0 10px 10px black;
+          box-shadow: 0 0 10px 10px black;
+  overflow: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.game__body-riddles-modal-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+.game__links {
+  padding-top: 20px;
+}
+
+.game__links p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.game__links p a:not(:last-child) {
+  margin-right: 20px;
+}
+
+footer {
+  height: 100px;
+  background-color: #333336;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=style.css.map */

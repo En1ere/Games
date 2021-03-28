@@ -1,0 +1,30 @@
+header {
+    background-color: #333336;
+    border-bottom: 1px solid black;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+a {
+    color: white;
+}
+body {
+    color: white;
+}
+main {
+    background-color: #222226;
+}
+.game__body-riddle {
+    -webkit-box-shadow: 0 0 10px 5px black;
+          box-shadow: 0 0 10px 5px black;
+}
+footer {
+    background-color: #333336;
+}
+.modal__black-screen {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.game__body-riddles-modal {
+    -webkit-box-shadow: 0 0 10px 10px black;
+          box-shadow: 0 0 10px 10px black;
+    background-color: #222226;
+}
