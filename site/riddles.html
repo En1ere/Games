@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Games</title>
@@ -16,34 +17,36 @@
 <body>
 
     <div class="wrapper">
-        <header class="center">
-            <a href="index.html">Главная</a>
-            <a href="riddles.html">Загадки</a>
-            <a href="guess.html">Угадайка</a>
-            <a href="password.html">Генератор паролей</a>
-        </header>
+        <div class="content">
+            <header class="center">
+                <a href="index.html">Главная</a>
+                <a href="snake/snake.html">Змейка</a>
+                <a href="riddles.html">Загадки</a>
+                <a href="guess.html">Угадайка</a>
+                <a href="password.html">Генератор паролей</a>
+            </header>
 
-        <main class="center">
-            <div class="game game__riddles">
+            <main class="center">
+                <div class="game game__riddles">
 
-                <h1>Игра в загадки</h1>
+                    <h1>Игра в загадки</h1>
 
-                <div class="game__body game__body-riddles-main">
-                    <div class="game__body-riddles">
-                        <div class="modal__black-screen hidden">
-                            <div class="game__body-riddles-modal"><i class="fas fa-window-close"></i>
-                                <p class="game__body-riddles-modal-text"></p>
+                    <div class="game__body game__body-riddles-main">
+                        <div class="game__body-riddles">
+                            <div class="modal__black-screen hidden">
+                                <div class="game__body-riddles-modal"><i class="fas fa-window-close"></i>
+                                    <p class="game__body-riddles-modal-text"></p>
+                                </div>
                             </div>
                         </div>
+                        <button onClick="checkAnswers();" id="buttonStart">Ответить</button>
+                        <button onClick="restart();" id="buttonAgain" class="hidden">Сыграть еще раз</button>
                     </div>
-                    <button onClick="checkAnswers();" id="buttonStart">Ответить</button>
-                    <button onClick="restart();" id="buttonAgain" class="hidden">Сыграть еще раз</button>
+
+
                 </div>
-
-
-            </div>
-        </main>
-
+            </main>
+        </div>
         <footer class="footer">
             <p>Copyright &copy; 2021 Roy Alexander</p>
             <a href="https://vk.com/fennixx" target="_blank"><i class="fab fa-vk"></i></a>

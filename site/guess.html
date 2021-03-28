@@ -15,27 +15,29 @@
 
 <body>
     <div class="wrapper">
-        <header class="center">
-            <a href="index.html">Главная</a>
-            <a href="riddles.html">Загадки</a>
-            <a href="guess.html">Угадайка</a>
-            <a href="password.html">Генератор паролей</a>
-        </header>
+        <div class="content">
+            <header class="center">
+                <a href="index.html">Главная</a>
+                <a href="snake/snake.html">Змейка</a>
+                <a href="riddles.html">Загадки</a>
+                <a href="guess.html">Угадайка</a>
+                <a href="password.html">Генератор паролей</a>
+            </header>
 
-        <main class="center">
-            <div class="game game__guess">
-                <h1>"Угадайка"</h1>
+            <main class="center">
+                <div class="game game__guess">
+                    <h1>"Угадайка"</h1>
 
-                <div class="game__body game__body-guess">
+                    <div class="game__body game__body-guess">
 
-                    <p id="info">Угадайте число от 0 до 100 за семь попыток <br>Введите ответ ниже:</p>
-                    <input type="text" id="userAnswer">
-                    <button onClick="guess();" id="button">Начать</button>
-                    <button onClick="restart();" id="buttonAgain" class="hidden">Еще разок</button>
+                        <p id="info">Угадайте число от 0 до 100 за семь попыток <br>Введите ответ ниже:</p>
+                        <input type="text" id="userAnswer">
+                        <button onClick="guess();" id="button">Начать</button>
+                        <button onClick="restart();" id="buttonAgain" class="hidden">Еще разок</button>
+                    </div>
                 </div>
-            </div>
-        </main>
-
+            </main>
+        </div>
         <footer class="footer">
             <p>Copyright &copy; 2021 Roy Alexander</p>
             <a href="https://vk.com/fennixx" target="_blank"><i class="fab fa-vk"></i></a>

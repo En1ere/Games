@@ -32,6 +32,10 @@ input {
 }
 .wrapper {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+      
 }
 .center {
     padding: 0 calc(50% - 570px);
@@ -68,6 +72,9 @@ main {
         background-color: rgba(0,0,0,0.9);
         z-index: 5;
     }
+}
+.content {
+    flex: 1 0 auto;
 }
 .fa-check {
     color: rgb(0, 194, 0);
@@ -147,10 +154,69 @@ main {
         }
     }
 }
+.snake {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+        margin-right: 50px;
+    }
+    
+    & h1 {
+        margin-bottom: 100px;
+    }
+    &__btns {
+        min-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        & button {
+            padding: 20px 40px;
+        }
+    }
+}
+#game {
+    border-collapse: collapse;
+    margin: 30px 0;
+    min-height: 484px;
+}
+td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(189, 189, 189);
+}
+.food {
+    background: #00d021;
+}
+.snakeBody {
+    background: $colorActive;
+}
+#message {
+    color: $colorActive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.score {
+    font-size: 30px;
+    font-weight: 600;
+}
+.current {
+    font-weight: bold;
+}
+.toWin {
+    font-size: 1.5em;
+    color: $colorActive;
+    font-weight: bold;
+    margin: 10px 0;
+}
 footer {
     height: 100px;
     background-color: #333336;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex: 0 0 auto;
 }

@@ -39,6 +39,14 @@ input {
 
 .wrapper {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .center {
@@ -87,6 +95,12 @@ main {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 5;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .fa-check {
@@ -188,6 +202,85 @@ main {
   margin-right: 20px;
 }
 
+.snake {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.snake > div {
+  margin-right: 50px;
+}
+
+.snake h1 {
+  margin-bottom: 100px;
+}
+
+.snake__btns {
+  min-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.snake__btns button {
+  padding: 20px 40px;
+}
+
+#game {
+  border-collapse: collapse;
+  margin: 30px 0;
+  min-height: 484px;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #bdbdbd;
+}
+
+.food {
+  background: #00d021;
+}
+
+.snakeBody {
+  background: #0091bd;
+}
+
+#message {
+  color: #0091bd;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.toWin {
+  font-size: 1.5em;
+  color: #0091bd;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
 footer {
   height: 100px;
   background-color: #333336;
@@ -199,5 +292,8 @@ footer {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
