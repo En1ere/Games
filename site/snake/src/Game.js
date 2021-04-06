@@ -110,17 +110,6 @@ class Game {
             return true;
         }
         return false;
-
-        /* 
-        [
-            {x: 1, y: 1}
-            {x: 1, y: 2}
-            {x: 1, y: 3}
-        ]
-        [
-            "11", "12", "13"
-        ]
-        */
     }
 
     /**
